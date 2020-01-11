@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="codecontent">
+    <div class="fatitle"></div>
+    <div class="fatitle" style="line-height:35px;">请输入要加密的字符串:</div>
+    <textarea cols="98" style="width:100%" rows="15" class="textarea_jm" id="str"></textarea>
+    <br>
+    <div align="center">
+    格式化:<input type="checkbox" value="1" id="format" name="格式化"/>&nbsp;&nbsp;
+    格式化多标签分行:<input type="checkbox" value="4" id="tagsmultiline" name="格式化多标签分行" />&nbsp;&nbsp;
+    保留标签:<input type="checkbox" value="2" id="tagkeep" name="" />&nbsp;&nbsp;
+    输出每次结果:<input type="checkbox" value="3" id="everyk" name="" />&nbsp;&nbsp;
+    字符串解密:<input type="checkbox" value="5" id="stringdecode" name="" />&nbsp;&nbsp;
+
+    <input type="button" value="解密" onclick="decode();" class="generate-button" id="decode">
+    </div>
+    <textarea cols="98" rows="15" class="textarea_result" id="result"></textarea>
+    <div class="heightjg"></div>
+</div>
